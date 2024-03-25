@@ -1,0 +1,124 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.boton-borrar{
+  background: rgb(155, 33, 33);
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contenedor-urlAcortada{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-urlAcortada h2{
+  margin-right: 15px;
+}
+
+.contenedor-formulario{
+  border-radius: 20px;
+  padding: 20px;
+  background: url('./assets/Syntwavecomputer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+ background-position: center center;   
+
+
+ box-shadow: 4px 11px 22px 10px rgba(0,0,0,0.3);
+-webkit-box-shadow: 4px 11px 22px 10px rgba(0,0,0,0.3);
+-moz-box-shadow: 4px 11px 22px 10px rgba(0,0,0,0.3);
+
+position: relative;
+}
+
+
+  .contenedor-formulario::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;  
+  z-index: -1;
+  width: 101%;
+  height: 101%;
+  background: linear-gradient(
+    45deg,
+    deeppink,#535bf2,deeppink,#535bf2,
+    deeppink,#535bf2,deeppink,#535bf2
+  ) ;
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(8px);
+  border-radius: 10px;
+
+  animation: brillos 20s linear infinite;
+}  
+
+
+@keyframes brillos {
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+
+}
+
+
+
+.contenedor-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-input .input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-input .input .icono{
+  border-radius: 15px 0 0 15px;
+  outline: solid 4px #535bf2;
+  background-color: #1a1a1a;
+  height: 42px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+}
+
+
+.urlPersonalizada{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.urlSpan{
+  /* background: linear-gradient(90.19deg, #69acee 18.61%, #8634f6 82.19%); */
+  background-image: linear-gradient(0deg,#cf5c5c,#c19b4a,#def2a0,#c6ee4a,#42eca6,#d564d9,#a8f121,#da49c7,#5bdfbe,#cc3db4,#cf5c5c,#c19b4a);
+  background-size: 100% 1100%;
+  height: 100vh;
+  width: 100vw;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: animarBg 5s linear infinite;
+ 
+}
+
+@keyframes animarBg {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 0% 100%; }
+}

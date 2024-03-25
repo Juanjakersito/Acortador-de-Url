@@ -1,0 +1,9 @@
+.urls-disponibles .urls{
+display: grid;
+grid-template-columns:repeat(auto-fit, min-max(20px,1fr));
+gap: 10px;
+}
+
+.urls-disponibles h3{
+    color: yellow;
+}
